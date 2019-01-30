@@ -1,0 +1,181 @@
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1524px) {
+	
+	
+	.side_header{
+		
+		height: 100%;
+		position: fixed;
+		/*background: url('../img/black-metal.jpg');*/
+		z-index: 9999;
+		padding: 30px 0;
+		.sidenav_fixed{
+			position: fixed;
+			
+
+			.side_logo{
+				margin-left: 20px;
+
+			}
+
+			.side_nav{
+				margin-top: 150px;
+				ul {
+					float: left;
+					list-style: none;
+					
+					
+
+					li{
+						margin-bottom: 5px;
+						padding-top: 5px;
+						background-color: #7f9fba;
+						text-align: center;
+						width: 90px;
+						border-top-right-radius: 30px;
+						
+						border-style: solid;
+						border-color: white;
+						border-width: 1px; 
+						/*border-bottom-right-radius: 50px;*/
+						box-shadow: 5px 5px 2px #bfd3d8;
+
+						a{
+							display: block;
+							margin-top: 0px;
+							padding-top: 0px;
+							padding-bottom: 5px;
+							line-height: 15px;
+							color: white;
+							
+							
+						}
+					
+						object.servicesIcon,
+							.phoneIcon,
+							.recIcon,
+							.statsIcon,
+							.mobileIcon,
+							.homeIcon,
+							.manageIcon{
+							width: 50px;
+							height: 50px;
+							margin: auto;
+							display: block;
+						}
+						a.servicesMenu{
+							position: relative;
+							display: block;
+						}
+				
+						a.servicesMenu:after{
+							content: '';
+							position: absolute;
+							top: 0;right: 0;bottom: 0;left: 0;
+						}
+						
+					
+					}
+					li:hover{
+						background-color:  #7f9fba;
+						width: 120px;
+					}
+					
+
+				}
+			}
+		}
+
+	}
+}
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+	.side_header{
+		
+		height: 100%;
+		position: fixed;
+		/*background: url('../img/black-metal.jpg');*/
+		z-index: 9999;
+		padding: 15px 0;
+		.sidenav_fixed{
+			position: fixed;
+			
+
+			.side_logo{
+
+				margin-left: 20px;
+
+			}
+
+			.side_nav{
+				margin-top: -65px;
+				ul {
+					float: left;
+					list-style: none;
+					
+					
+
+					li{
+						margin-bottom: 5px;
+						padding-top: 5px;
+						background-color: #7f9fba;
+						text-align: center;
+						width: 90px;
+						border-top-right-radius: 30px; 
+						border-style: solid;
+						border-color: white;
+						border-width: 1px; 
+						/*border-bottom-right-radius: 50px;*/
+						box-shadow: 5px 5px 2px #bfd3d8;
+
+						a{
+							display: block;
+							margin-top: 0px;
+							padding-top: 0px;
+							padding-bottom: 5px;
+							line-height: 15px;
+							color: white;
+							
+							
+						}
+					
+						object.servicesIcon,
+							.phoneIcon,
+							.recIcon,
+							.statsIcon,
+							.mobileIcon,
+							.homeIcon,
+							.manageIcon{
+							width: 40px;
+							height: 40px;
+							margin: auto;
+							display: block;
+						}
+						a.servicesMenu{
+							position: relative;
+							display: block;
+						}
+				
+						a.servicesMenu:after{
+							content: '';
+							position: absolute;
+							top: 0;right: 0;bottom: 0;left: 0;
+						}
+						
+					
+					}
+					li:hover{
+						background-color:  #7f9fba;
+						width: 95px;
+					}
+					
+
+				}
+			}
+		}
+
+	}
+}
+
+
+

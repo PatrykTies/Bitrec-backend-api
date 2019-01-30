@@ -1,0 +1,15 @@
+.progress-view{
+	background: yellow;
+	height: 100px;
+	animation: formSlideIn 3s;
+}
+@keyframes formSlideIn {
+	from{
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}

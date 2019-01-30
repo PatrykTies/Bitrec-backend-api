@@ -1,0 +1,99 @@
+
+
+<div layout='row' layout-align='center center' style='min-height:800px;'> <!-- CONTAINER DIV-->
+	<div flex-xs='100' flex-sm='100' flex-gt-sm='90' flex-gt-md='70' flex-gt-lg='50' 
+	   class='md-whiteframe-z2'  ><!-- FORM BOX DIV -->
+
+	 
+	    	<md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>Enter your skills: ENGLISH COMMUNIACATION LEVEL </span>
+			    </h2>
+		    </md-toolbar>
+             <md-content  layout-gt-xs="row" layout-padding >    	
+		    	<md-radio-group ng-model="jobseeker.english_level" flex='100' flex-gt-xs='50' class="md-block" >
+	          		 <md-radio-button   ng-value="1" class="md-primary" >
+			              Fully communicative.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="2" class="md-primary" >
+			              I think my English is good enough.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="3" class="md-primary" >
+			              I can unserstand most, but speaking give me a problems.
+			          </md-radio-button>      
+				 </md-radio-group>
+	   		 </md-content>
+	   		 
+
+            <md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>Enter your availability: </span>
+			    </h2>
+		    </md-toolbar>
+		     <md-content  layout-gt-xs="row" layout-padding >
+		     	<md-radio-group ng-model="jobseeker.employement_status" flex='100' flex-gt-xs='50' class="md-block" >
+	          		 <md-radio-button   ng-value="1" class="md-primary" >
+			             Currently unemployed. Free to start at any time.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="2" class="md-primary" >
+			              Recently under leave period from my last employer.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="3" class="md-primary" >
+			              Employed, but looking to change work at any time.
+			          </md-radio-button> 
+			           <md-radio-button   ng-value="4" class="md-primary" >
+			              Looking for extra work, as working for another agency same time.
+			          </md-radio-button>           
+				 </md-radio-group>    	
+		  
+		       
+		            <div flex="5" hide-xs hide-sm>
+			          <!-- Spacer //-->
+			        </div>
+			     <md-radio-group ng-model="jobseeker.when_to_start_work" flex='100' flex-gt-xs='50' class="md-block" >
+	          		 <md-radio-button   ng-value="1" class="md-primary" >
+			             I am free now, can start anytime.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="2" class="md-primary" >
+			             Can start from monday next week.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="3" class="md-primary" >
+			              I will be free in less than a weeks time.
+			          </md-radio-button> 
+			           <md-radio-button   ng-value="4" class="md-primary" >
+			             I need more than a week to organize myself for work.
+			          </md-radio-button>           
+				 </md-radio-group>    	
+			             
+            </md-content>
+
+
+             <md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>Q : DID YOU REGISTER WITH BITREC BEFORE? </span>
+			    </h2>
+		    </md-toolbar>
+		     <md-content  layout-gt-xs="row" layout-padding >    	
+		    	<md-radio-group ng-model="jobseeker.worked_before" flex='100' flex-gt-xs='50' class="md-block" >
+	          		 <md-radio-button   ng-value="1" class="md-primary" >
+			             YES.
+			          </md-radio-button>
+			          <md-radio-button   ng-value="2" class="md-primary" >
+			            NO.
+			          </md-radio-button>       
+				 </md-radio-group>    	        
+            </md-content>
+		    
+			
+            <div >
+		        <md-button ui-sref='apply.yourphoto' >NEXT TO YOUR PROFILE PIC</md-button>
+		    </div>
+		
+	</div>
+	
+</div>
+
+
+      
+      
+

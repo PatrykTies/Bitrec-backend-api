@@ -1,0 +1,1 @@
+define(["angular","app/app","app/router","app/controllers/applyCtrl","app/directives/fileModel"],function(e,a){a.run(["$rootScope","$state","$stateParams",function(e,a,t){e.$state=a,e.$stateParams=t}]),require(["domReady!"],function(a){e.bootstrap(a,["app"]);var t=a.getElementById("preloader");t.style.display="none"})});

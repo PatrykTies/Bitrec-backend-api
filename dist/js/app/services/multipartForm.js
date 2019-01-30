@@ -1,0 +1,1 @@
+!function(){angular.module("myapp").service("multipartForm",["$http",function(t){"use strict";this.post=function(n,a){var e=new FormData;for(var r in a)e.append(r,a[r]);t.post(n,e,{transformRequest:angular.identity,headers:{"Content-Type":void 0}})}}])}();

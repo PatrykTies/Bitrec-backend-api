@@ -1,0 +1,52 @@
+/* PAGES (specific css for each view page)-------------------HOME
+============================================================================= */
+
+
+
+
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1524px) {
+  
+.countdown{
+	font-size: 64px;
+	font-style: oblique;
+	
+}
+#under{
+	margin-bottom: -40px;
+}
+#ontop{
+	margin-top: 40px;
+}
+#chart3{
+	margin-top: -70px;
+}
+
+}
+
+
+	
+
+
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+/* Styles */
+
+
+    
+
+}
+/*MEDIA FOR LAPTOP SCREENS  AND  MOBILE SAMSUNG & IPHONE 5C SCREENS*/
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	
+	
+}
+/*MEDIA FOR TABLETS SCREENS*/
+@media only screen and (min-width : 322px) and (max-width : 767px){
+/* Styles */
+ 
+
+    
+}
+
+

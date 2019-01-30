@@ -1,0 +1,1 @@
+define(["angular","ngMaterial","ngMessages","uiRouter"],function(e){var a=e.module("app",["ui.router","ngMaterial","ngMessages"]);return a});

@@ -1,0 +1,122 @@
+// CTA btn
+
+.cta-btn {
+  position: absolute;
+	top: 60%;
+  left: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+  z-index: 1;
+}
+.cta-btn:hover {
+	opacity: .5;
+}
+.cta-btn span {
+	position: absolute;
+  margin-top: 15px;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(-45deg);
+	animation: ctaan 2s infinite;
+	opacity: 0;
+	box-sizing: border-box;
+}
+.cta-btn span:nth-of-type(1) {
+  top: 0;
+	animation-delay: 0s;
+}
+.cta-btn span:nth-of-type(2) {
+	top: 16px;
+	animation-delay: .15s;
+}
+.cta-btn span:nth-of-type(3) {
+	top: 32px;
+	animation-delay: .3s;
+}
+@-webkit-keyframes ctaan {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes sdb07 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+// top btn
+
+.top-btn {
+	position: absolute;
+	bottom: 10%;
+	right: 50px;
+	z-index: 2;
+	display: inline-block;
+	transform: translate(0, -50%);
+	color: #000;
+	font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+}
+.top-btn:hover {
+	opacity: .5;
+}
+.top-btn span {
+	position: absolute;
+  margin-top: 25px;
+	top: 0;
+	left: 50%;
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	border: 1px solid #000;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+.top-btn span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin: -6px 0 0 -7px;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	transform: rotate(135deg);
+	box-sizing: border-box;
+}
+#top1, #services1, #stats1, #smartHRO1, #manage1, #contact1 {
+  background-size: 100% 100%;
+  height: 100vh;
+}
+#recruitment1 {
+  margin:0;
+}
+#stats1 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}

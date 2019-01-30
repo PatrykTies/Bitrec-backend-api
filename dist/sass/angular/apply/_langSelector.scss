@@ -1,0 +1,56 @@
+.form-view{
+    position: absolute;
+	
+	height: 100%;
+	width: 100%;
+	transition: all 0.5s ease;/*THIS MAKES ANIMATION POSSIBLE*/
+}
+
+.lang-selector{
+	/*THIS IS MAKING ANIMATION ON LOAD*/
+}
+
+.form-view{
+	&.ng-enter{
+		 /*INITIAL ANIMATION ON NG-ENTER*/
+			
+	    	animation: formSlideIn 1s;
+		
+		
+	}
+
+}
+.form-view{
+	&.ng-leave{
+		 /*INITIAL ANIMATION ON NG-ENTER*/
+			position: absolute;
+			animation: formSlideOut 1s;
+		
+		
+	}
+
+}
+
+		
+	
+ 
+
+
+@keyframes formSlideIn {
+	from{
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes formSlideOut {
+	from{
+		transform: translateX(0px);
+	}
+	to{
+		transform: translateX(2000px);
+	}
+}

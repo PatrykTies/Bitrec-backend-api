@@ -1,0 +1,1 @@
+define([],function(){function n(n){var e=parseInt($(".phone-inner ul").css("left"))-n,i=-1*n;$(".phone-inner ul").animate({left:e},200,function(){$(".phone-inner li:last").after($(".phone-inner li:first")),$(".phone-inner ul").css({left:i})})}return{slide:n}});

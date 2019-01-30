@@ -1,0 +1,441 @@
+/* PAGES (specific css for each view page)------------------REGISTER
+============================================================================= */
+body{
+  overflow: hidden;
+}
+
+.float-right{
+  float: right;
+}
+
+.border-white{
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.page-register { 
+
+	background:#8d6e63; 
+	color: white; 
+	/*POSITION ABSOLUTE WORKS WITH ANGULAR VIEW ANIMATIONS*/
+	position: absolute;
+	padding-top:70px;
+	padding-bottom: 400px;
+	width:100%;
+  min-width:100%; 
+  overflow: hidden;
+
+	/* label color */
+   .input-field label {
+     color: white;
+   }	
+	 /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+   }
+   .input-field input[type=tel]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: white;
+   }
+   .input-field input[type=tel]:focus + label {
+     color: white;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: white;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 #000;
+   }
+	
+}
+
+
+.redi{
+  background-color: red;
+}
+
+
+/*===========================================ANIMATION FOR PART 1*/
+.form-wrapper{
+  padding-top: 100px;
+  opacity: 0;
+  transform: translateX(1000px);
+  
+}
+
+.form-unwrapper{
+  
+  animation: visible 1s linear;
+  
+  opacity: 1;
+  transform: translateX(0px);
+
+}
+@keyframes visible {
+  from{
+     opacity: 0;
+     transform: translateX(1000px);
+    }to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+
+.page1_flyin1{
+  opacity: 0;
+  animation: flyin 0.7s .5s ease;
+   -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+.page1_flyin2{
+   opacity: 0;
+  animation: flyin 0.7s .6s ease;
+   -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+.page1_flyin3{
+   opacity: 0;
+  animation: flyin 0.7s .7s ease;
+   -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+.page1_flyin4{
+   opacity: 0;
+  animation: flyin 0.7s .8s ease;
+   -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+.page1_flyin5{
+    opacity: 0;
+  animation: flyin 0.7s .9s ease;
+   -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+@keyframes flyin{
+  from{
+      transform: translateX(-500px) ; 
+      opacity: 0;  
+    }
+    to{
+      transform: translateX(0) ; 
+      opacity: 1;
+    }
+}
+
+
+/*===========================================ANIMATION FOR PART 2*/
+
+ul.circles{
+  display: inline-block;
+  margin-left: -20px;
+  position: absolute;
+  
+  & li{
+
+  color: brown;
+  padding-top: 10px; 
+  text-align: center;
+  background: white;
+  width:100px;
+  
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 25px;
+  }
+  & li:first-child{
+    margin-top:0px;
+  }
+  & li:last-child{
+    margin-bottom:10px;
+    
+  }
+
+  & h3{
+    font-size: 32px;
+    font-weight: bold;
+ 
+    }
+  }
+
+ul.tooltips{
+ 
+  margin-top: 30px;
+  margin-left: 150px;
+  position: absolute;
+  
+  
+}
+ul.tooltips li{
+
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-top: 45px;
+  padding: 15px 25px 15px 25px;
+  &:nth-child(1){
+    margin-top:0px;
+ }
+
+}
+.page2_flyout1{
+
+    opacity: 1;
+    -moz-animation: fly_bottom .5s linear;
+    animation: fly_bottom .5s linear;
+
+    animation-delay: .25s;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+.page2_flyout2{
+
+    opacity: 1;
+    -moz-animation: fly_bottom .5s linear;
+    animation: fly_bottom .5s linear;
+
+    animation-delay: .2s;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+.page2_flyout3{
+
+    opacity: 1;
+    -moz-animation: fly_bottom .5s linear;
+    animation: fly_bottom .5s linear;
+
+    animation-delay: .15s;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+.page2_flyout4{
+
+    opacity: 1;
+    -moz-animation: fly_bottom .5s linear;
+    animation: fly_bottom .5s linear;
+
+    animation-delay: .1s;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+.page2_flyout5{
+
+    opacity: 1;
+    -moz-animation: fly_bottom .5s linear;
+    animation: fly_bottom .5s linear;
+
+    
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fly_bottom{
+  0%{
+      transform: translateY(); 
+      opacity: 1;
+      
+    }
+    
+    100%{
+      transform: translateY(800%);
+      opacity: 0; 
+    }
+}
+
+
+  .page2_flyin1{
+   
+    transform-origin: 15% 15%;
+    opacity: 1;
+    -moz-animation: rotate_five .5s linear;
+    animation: rotate_five .5s linear;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    & h3{
+    -moz-animation: rotate_back .5s linear;
+    animation: rotate_back .5s linear;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  }
+
+
+  .page2_flyin2{
+   
+    transform-origin: 0 -380%;
+    opacity: .3;
+    -moz-animation: rotate_five .5s linear;
+    animation: rotate_five .5s linear;
+    
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    animation-delay: .2s;
+    & h3{
+    -moz-animation: rotate_back .5s linear;
+    animation: rotate_back .5s linear;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  }
+  .page2_flyin3{
+   
+    transform-origin: 0 -800%;
+    opacity: .3;
+    -moz-animation: rotate_five .5s linear;
+    animation: rotate_five .5s linear;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    animation-delay: .4s;
+
+    & h3{
+    -moz-animation: rotate_back .5s linear;
+    animation: rotate_back .5s linear;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+    
+  }
+  .page2_flyin4{
+  
+    transform-origin: 0 -1220%;
+    opacity: .3;
+    -moz-animation: rotate_five .5s linear;
+    animation: rotate_five .5s linear;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    animation-delay: .6s;
+
+    & h3{
+    -moz-animation: rotate_back .5s linear;
+    animation: rotate_back .5s linear;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  }
+ 
+  .page2_flyin5{
+   
+    transform-origin: 0 -1640%;
+    opacity: .3;
+    -moz-animation: rotate_five .5s linear;
+    animation: rotate_five .5s linear;
+
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    animation-delay: .8s;
+
+    & h3{
+    -moz-animation: rotate_back .5s linear;
+    animation: rotate_back .5s linear;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  }
+  
+
+
+
+
+
+@keyframes rotate_five{
+  0%{
+      transform: rotate(0deg); 
+      
+    }
+    
+    100%{
+      transform: rotate(-45deg);
+
+    
+    }
+}
+@keyframes rotate_back{
+  from{
+      transform: rotate(0deg);
+     
+    }
+    to{
+      transform: rotate(45deg);
+     
+    }
+}
+
+/*=======================================ANIMATIONS FOR PART 3*/
+.page2-formout{
+  animation: notvisible .5s linear;
+  
+  opacity: 1;
+  transform: translateX(0px);
+
+}
+
+@keyframes notvisible {
+  from{
+     opacity: 1;
+     transform: translateX(0px);
+    }to{
+      opacity: 0;
+      transform: translateX(-1000px);
+    }
+}
+
+
+.circle-active{
+  opacity: 1;
+}
+
+
+/*=======================================DEBUGGING / DEV MODES*/
+
+.border{
+  border: 1px solid yellow;
+}
+
+ 
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1324px) and (max-width : 1523px){ 
+ul.circles{
+ 
+  margin-left: -120px;
+}
+
+}
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1323px){ 
+ul.circles{
+  border: 2px solid black;
+  margin-left: -120px;
+}
+
+}
+

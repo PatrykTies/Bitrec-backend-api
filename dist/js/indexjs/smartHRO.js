@@ -1,0 +1,1 @@
+define(["jquery","indexjs/phoneSliderPrev","indexjs/phoneSliderNext"],function(e,n,i){function d(){var d=e(".phone-inner li").outerWidth(),c=e(".fp-prev"),o=e(".fp-next");c.click(function(){n.slide(d)}),o.click(function(){i.slide(d)})}e(document).ready(d)});

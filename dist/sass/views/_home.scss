@@ -1,0 +1,410 @@
+/* PAGES (specific css for each view page)-------------------HOME
+============================================================================= */
+
+
+
+
+
+
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1524px) {
+   .page-home {  
+   
+    
+    top:0;
+	
+    width:100%;
+    min-width:100%;      
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale')";
+
+			.bg-first{
+    		 background-image: url('../img/warehouse.jpg'); 
+    		 background-size: cover; 
+    		} 
+    	
+    	
+	}
+
+	.hire_margin{
+		margin-right: 0;
+		padding-right: 0;
+		overflow:hidden;
+	}
+	.hire, .join{
+		display: block;
+		background: fade-out($yellow, 0.3);
+		overflow:hidden;
+		color: black;
+		text-decoration: none;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding: 0 20px;
+		margin: 0 0 200px 0 !important;
+		
+		&:hover{
+			background: black;
+			color: $yellow;
+		}
+		.ion-chevron-right{
+			font-size: .8em;
+			margin-left:10px;	
+		}
+	}
+
+	h5{
+		color: black;
+	}
+
+	.hometitle{
+	    font-family: 'Magra', sans-serif;
+		margin: 200px 0 50px 0;
+		color: $yellow;
+		text-transform: uppercase;
+
+		span{
+			display: inline-block;
+			background: fade-out($black, 0.5 );
+			font-size: 70px;
+			margin-bottom: 5px;
+			padding: .4em .6em .4em .6em;
+		}
+	}
+	.testimonial-img-wrapper{
+		display: inline-block;
+		margin-top: 80px;
+	    position: relative;
+
+
+		.img-testimonial{
+			 -moz-border-radius: 4px / 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+
+		}
+		.logo-testimonial{
+			  width: 200px;
+		}
+	}
+
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}
+
+
+	.flex-video{
+	    height: 0;
+	    overflow: hidden;
+	    padding-bottom: 50%;
+	    position: relative;
+	}
+
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed,
+	.flex-video video {
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    left: 0;
+	}
+
+}
+
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+/* Styles */
+	.page-home {  
+    
+    top:0;
+	position: absolute;
+	
+
+    width:100%;
+    min-width:100%;  
+
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale')";
+  		
+    		 background-image: url('../img/warehouse.jpg'); 
+    		 background-size: cover;  
+    		 overflow-x:hidden; /*---THIS MADE ANDROID FULL SCREEN*/
+    	
+	}
+	
+	.hire, .join{
+		display: inline-block;
+		background: fade-out($yellow, 0.3);
+		color: black;
+		text-decoration: none;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding: 0 .2em;
+		margin-bottom: 80px;
+		&:hover{
+			background: black;
+			color: $yellow;
+		}
+		.ion-chevron-right{
+			font-size: .8em;
+			margin-left:10px;	
+		}
+	}
+
+	h5{
+		color: black;
+	}
+
+	.hometitle{
+	    font-family: 'Magra', sans-serif;
+		margin: 80px 0 20px 0;
+		color: $yellow;
+		text-transform: uppercase;
+
+		span{
+			display: inline-block;
+			background: fade-out($black, 0.5 );
+			font-size: 60px;
+			margin-bottom: 5px;
+			padding: .4em .2em .4em .2em;
+		}
+	}
+	.testimonial-img-wrapper{
+		display: inline-block;
+		margin-top: 80px;
+	    position: relative;
+	  
+
+		.img-testimonial{
+			 -moz-border-radius: 4px / 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+
+		}
+		.logo-testimonial{
+			  width: 200px;
+		}
+	}
+
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}
+	.flex-video{
+	    height: 0;
+	    overflow: hidden;
+	    padding-bottom: 50%;
+	    position: relative;
+	}
+
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed,
+	.flex-video video {
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    left: 0;
+	}
+	
+    
+
+}
+/*MEDIA FOR LAPTOP SCREENS  AND  MOBILE SAMSUNG & IPHONE 5C SCREENS*/
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	.page-home {  
+    background-image: url('../img/warehouse.jpg'); 
+    background-size: cover;  
+    top:0;
+
+	overflow-x:hidden; /*---THIS MADE ANDROID FULL SCREEN*/
+
+    width:100%;
+    min-width:100%;  
+    
+
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale')";
+  
+	}
+	.hire_margin{
+	    margin-bottom: 1em;
+	}
+	.join_margin{
+		margin-top: 1em;
+		margin-bottom: 50px;
+	}
+	.hire, .join{
+		
+		background: fade-out($yellow, 0.3);
+		color: black;
+		text-decoration: none;
+		font-size: 80px;
+		text-transform: uppercase;
+		padding: 0.2em 1em 0.2em 0.2em;
+		
+		&:hover{
+			background: black;
+			color: $yellow;
+		}
+		.ion-chevron-right{
+			font-size: .8em;
+			margin-left:10px;	
+		}
+	}
+
+	h5{
+		color: black;
+	}
+
+	.hometitle{
+	    font-family: 'Magra', sans-serif;
+		margin: 10px 0 100px 0;
+		color: $yellow;
+		text-transform: uppercase;
+
+		span{
+			display: inline-block;
+			background: fade-out($black, 0.5 );
+			font-size: 70px;
+			margin-bottom: 5px;
+			padding: .1em .2em .1em .2em;
+		}
+	}
+	.testimonial-img-wrapper{
+		display: inline-block;
+		margin-top: 80px;
+	    position: relative;
+
+	  
+
+		.img-testimonial{
+			 -moz-border-radius: 4px / 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+
+		}
+		.logo-testimonial{
+			  width: 200px;
+		}
+	}
+
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}
+	.flex-video{
+	    height: 0;
+	    overflow: hidden;
+	    padding-bottom: 50%;
+	    position: relative;
+	}
+
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed,
+	.flex-video video {
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    left: 0;
+	}
+}
+/*MEDIA FOR TABLETS SCREENS*/
+@media only screen and (min-width : 322px) and (max-width : 767px){
+/* Styles */
+  
+  .page-home {  
+    background-image: url('../img/warehouse.jpg'); 
+    background-size: cover;  
+    top:0;
+
+	overflow-x:hidden; /*---THIS MADE ANDROID FULL SCREEN*/
+
+    width:100%;
+    min-width:100%;  
+
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale')";
+  
+	}
+
+    
+}
+/*MEDIA FOR SMALLER SCREENS*/
+@media only screen and (max-width : 321px) {
+/* Styles */
+  .page-home {  
+    background-image: url('../img/warehouse.jpg'); 
+    background-size: cover;  
+    top:0;
+
+	overflow-x:hidden; /*---THIS MADE ANDROID FULL SCREEN*/
+
+    width:100%;
+    min-width:100%;  
+
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/warehouse.jpg', sizingMethod='scale')";
+  
+	}
+
+    
+}
+

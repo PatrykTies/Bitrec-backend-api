@@ -1,0 +1,25 @@
+
+.bg-stats{
+
+	position: relative;
+}
+#sweets{
+	position: absolute;
+	bottom:-400px;
+	left: 0;
+	right: 0;
+	height: 600px;
+	width: 600px;
+	margin: 0 auto;
+	transition: all 1.1s ease-out;
+}
+.fp-viewing-stats #sweets{
+	bottom:100px;
+}
+.fp-viewing-smartHRO #sweets{
+	bottom:0;
+}
+.fp-viewing-contact #okrag{
+
+}
+

@@ -1,0 +1,45 @@
+
+<div layout='row' layout-align='center center' style='min-height:800px;'> <!-- CONTAINER DIV-->
+	<div flex-xs='100' flex-sm='100' flex-gt-sm='90' flex-gt-md='70' flex-gt-lg='50' 
+	   class='md-whiteframe-z2'  ><!-- FORM BOX DIV -->
+
+	 
+	    	<md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>Drag and drop you profile photo or grab it from social media : 
+			               UPLOAD YOUR CV BELOW</span>
+			    </h2>
+		    </md-toolbar>
+	    	
+
+             <md-content  layout-gt-xs="row" layout-padding >    	
+		    		<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			            <label>Profile Photo</label>
+			            <md-icon md-svg-src="../../img/sidemenu/phone.svg"></md-icon>
+			            <input required type='text' md-maxlength="7" ng-model="jobseeker.postalcode">
+		            </md-input-container>
+		            <div flex="5" hide-xs hide-sm>
+			          <!-- Spacer //-->
+			        </div>
+		            <md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			         
+			          	
+			          </md-select>
+				    </md-input-container>
+		            
+            </md-content>
+		    <input type="file" name='file' file-model='jobseeker.file'>
+			
+            <div >
+		        <md-button ui-sref='apply.ThankYouForRegisteringWithUs' >NEXT TO PREVIEW</md-button>
+		    </div>
+		
+				
+	</div>
+	
+</div>
+
+
+      
+      
+

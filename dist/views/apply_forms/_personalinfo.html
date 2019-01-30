@@ -1,0 +1,136 @@
+
+<div flex='none' layout='row' layout-align='center center' style='min-height:0;'> <!-- CONTAINER DIV-->
+	<div flex-xs='100' flex-sm='100' flex-gt-sm='90' flex-gt-md='70' flex-gt-lg='50' 
+	   class='md-whiteframe-z2'  ><!-- FORM BOX DIV -->
+
+	   
+	    	<md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>For starters, enter Job details you are applying for, below :</span>
+			    </h2>
+		    </md-toolbar>
+	    	 <md-content  layout-gt-xs="row" layout-padding > 
+				<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+		          <label>Job Reference Number</label>
+		          	<md-select name="type" ng-model="jobseeker.campaign_id" md-on-open="loadCampaigns()" required>
+		            <md-option ng-value="campaign.campaign_id" ng-repeat="campaign in campaigns">
+		            {{campaign.campaign_id}}
+		            </md-option>
+		          </md-select>
+			    </md-input-container>  
+
+			    <div flex="5" hide-xs hide-sm>
+		          <!-- Spacer //-->
+		        </div> 	
+
+				<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+		          <label>Position you applying for</label>
+		          	<md-select name="type" ng-model="jobseeker.position_id" md-on-open="loadPositions()" required>
+		            <md-option ng-value="position.position_id" ng-repeat="position in positions">
+		            {{position.position_name}}
+		            </md-option>
+		          </md-select>
+			    </md-input-container>
+	    	 </md-content>
+
+	    	<md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>Now, please tell us how we can contact you :</span>
+			    </h2>
+		    </md-toolbar>
+
+	    	 <md-content  layout-gt-xs="row" layout-padding >    	
+		    		<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			            <label>First Name(s)</label>
+			            <input required type='text' md-maxlength="30" ng-model="jobseeker.first_name">
+		            </md-input-container>
+		            <div flex="5" hide-xs hide-sm>
+			          <!-- Spacer //-->
+			        </div>
+		            <md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			            <label>Last Name</label>
+			            <input required type='text' md-maxlength="30" ng-model="jobseeker.last_name">
+		            </md-input-container>
+            </md-content>
+
+             <md-content  layout-gt-xs="row" layout-padding >    	
+		    		<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			            <label>Phone Number</label>
+			            <md-icon md-svg-src="../../img/sidemenu/phone.svg"></md-icon>
+			            <input required type='text' md-maxlength="11" ng-model="jobseeker.contact_no">
+		            </md-input-container>
+		            <div flex="5" hide-xs hide-sm>
+			          <!-- Spacer //-->
+			        </div>
+		            <md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			          <label>Your Sex</label>
+			          	<md-icon md-svg-src="../../img/sidemenu/phone.svg"></md-icon>
+			          	<md-select name="sex" ng-model="jobseeker.sex" required>
+			            <md-option value="female">Female</md-option>
+			            <md-option value="male">Male</md-option>
+			          </md-select>
+				    </md-input-container>
+		            
+            </md-content>
+		     <md-content  layout-gt-xs="row" layout-padding >       
+		            <md-input-container flex='100' flex-gt-xs='50' class="md-block">
+				        <label>Contact Email</label>
+				        <input required type="email" name="Email" ng-model="jobseeker.email_id"
+				               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+
+				        <div ng-messages="jobseekerForm.Email.$error" role="alert">
+				          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+				            Your email must be between 10 and 100 characters long and look like an e-mail address.
+				          </div>
+				        </div>
+				    </md-input-container>
+				    <div flex="5" hide-xs hide-sm>
+			          <!-- Spacer //-->
+			        </div>
+				    <md-input-container flex='100' flex-gt-xs='50' class="md-block">
+				        <label>Confirm Email</label>
+				        <input required type="email" name="EmailMatch" ng-model="jobseeker.emailMatch"
+				               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+
+				        <div ng-messages="jobseekerForm.EmailMatch.$error" role="alert">
+				          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+				            Your email must be between 10 and 100 characters long and look like an e-mail address.
+				          </div>
+				        </div>
+				    </md-input-container>
+	    	</md-content>
+	    	<md-content  layout-gt-xs="row" layout-padding > 
+				<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+		          <label>Select you Age Group</label>
+		          	<md-select name="age" ng-model="jobseeker.age" required>
+		            <md-option value="82">between 18-24 years old</md-option>
+		            <md-option value="53">between 25-35 years old</md-option>
+		            <md-option value="54">between 35-45 years old</md-option>
+		            <md-option value="55">between 45-55 years old</md-option>
+		            <md-option value="56">between 55-65 years old</md-option>
+		          </md-select>
+			    </md-input-container>
+			    <div flex="5" hide-xs hide-sm>
+		          <!-- Spacer //-->
+		        </div>
+				<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+		          <label>Nationality</label>
+		          	<md-select name="nationality" ng-model="jobseeker.nationality" required>
+		            <md-option value="brit">British</md-option>
+		            <md-option value="pol">Polish</md-option>
+		          </md-select>
+			    </md-input-container>
+	    	 </md-content>
+			
+            <div >
+		        <md-button ui-sref='apply.yourlocation' >NEXT TO YOUR LOCATION</md-button>
+		    </div>
+		
+				
+	</div>
+	
+</div>
+
+
+      
+      

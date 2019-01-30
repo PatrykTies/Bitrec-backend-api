@@ -1,0 +1,183 @@
+/* PAGES (specific css for each view page)-------------------HOME
+============================================================================= */
+ 
+#top1,
+#services1,
+#stats1,
+#smartHRO1,
+#manage1,
+#contact1{
+	width:100%;
+            height:100%;
+            background-size:100% auto;
+            background-repeat: no-repeat;
+}
+#stats1{
+	/*background-image: url('../img/statistics/green_blur.jpg');*/
+	background-image: url('../img/statistics/grey_blur.jpg');
+	
+	 
+}
+#services1{
+	/*background-image: url('../img/statistics/warehouse_blur.jpg');*/
+	background-image: url('../img/backgrounds/backgroundBlue2.png');
+	
+} 
+#smartHRO1{
+	/*background-image: url('../img/services/servicesPage1.svg');*/
+	background-image: url('../img/backgrounds/backgroundBlue.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+
+} 
+#manage1{
+	background-image: url('../img/statistics/grey_blur.jpg');
+
+	 
+} 
+
+
+
+
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1524px) {
+ 
+#top1,
+#services1,
+#stats1,
+
+#manage1,
+#contact1{
+	width:100%;
+            height:100%;
+            background-size:100% auto;
+            background-repeat: no-repeat;
+}
+
+
+		
+	
+
+
+	
+}
+
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+/* Styles */
+
+
+#top1,
+#services1,
+#stats1,
+#smartHRO1,
+#manage1,
+#contact1{
+	width:100%;
+            height:100%;
+            background-size:100% auto;
+            background-repeat: no-repeat;
+}
+#stats1{
+	background-image: url('../img/statistics/green_blur.jpg');
+	
+	 
+}
+#services1{
+	/*background-image: url('../img/statistics/warehouse_blur.jpg');*/
+	background-image: url('../img/backgrounds/backgroundBlue2.png');
+	background-position: 0 0;
+	
+
+	 
+} 
+#smartHRO1{
+	background-image: url('../img/backgrounds/backgroundBlue.svg');
+	 
+} 
+#manage1{
+	background-image: url('../img/statistics/grey_blur.jpg');
+	 
+} 
+
+    
+
+}
+/*MEDIA FOR LAPTOP SCREENS  AND  MOBILE SAMSUNG & IPHONE 5C SCREENS*/
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	
+#top1,
+#services1,
+#stats1,
+#smartHRO1,
+#manage1,
+#contact1{
+	width:100%;
+            height:100%;
+            background-size:100% auto;
+            background-repeat: no-repeat;
+}
+#stats1{
+	/*background-image: url('../img/statistics/green_blur.jpg');*/
+	background-image: url('../img/statistics/grey_blur.jpg');
+	
+	 
+}
+#services1{
+	background-color: #DCD1C4;
+	 
+} 
+#smartHRO1{
+	background-color: #C4BDB7;
+	 
+} 
+#manage1{
+	background-image: url('../img/statistics/grey_blur.jpg');
+	 
+} 
+
+	
+}
+/*MEDIA FOR TABLETS SCREENS*/
+@media only screen and (min-width : 322px) and (max-width : 767px){
+/* Styles */
+ 
+#top1,
+#services1,
+#stats1,
+#smartHRO1,
+#manage1,
+#contact1{
+	width:100%;
+            height:100%;
+            background-size:100% auto;
+            background-repeat: no-repeat;
+}
+#stats1{
+	background-image: url('../img/statistics/green_blur.jpg');
+	
+	 
+}
+#services1{
+	background-color: #DCD1C4;
+	 
+} 
+#smartHRO1{
+	background-color: #C4BDB7;
+} 
+#manage1{
+	background-image: url('../img/statistics/grey_blur.jpg');
+	 
+} 
+
+
+    
+}
+
+

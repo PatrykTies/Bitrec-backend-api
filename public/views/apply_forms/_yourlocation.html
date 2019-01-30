@@ -1,0 +1,57 @@
+
+
+<div layout='row' layout-xs='column' layout-align='center center' style='min-height:800px;'> <!-- CONTAINER DIV-->
+	<div flex-xs='100'  flex-gt-xs='20' 
+	   class='md-whiteframe-z2'  ><!-- FORM BOX DIV -->
+
+	   
+	    	<md-toolbar >
+			    <h2 class="md-toolbar-tools">
+			      <span>Enter your postal code and find your address: </span>
+			    </h2>
+		    </md-toolbar>
+	    	
+
+             <md-content  layout-gt-xs="column" layout-padding >    	
+		    		<md-input-container flex='100' flex-gt-xs='50' class="md-block" >
+			            <label>Postal Code</label>
+			            <md-icon md-svg-src="../../img/sidemenu/phone.svg"></md-icon>
+			            <input required type='text' md-maxlength="7" ng-model="jobseeker.postal_code">
+		            </md-input-container>
+		           
+			        <md-input-container class="md-block" flex-gt-sm>
+			          <script id="searchbox.tpl.html" type="text/ng-template">
+					      <input type="text" placeholder="Search">
+					    </script>
+			        </md-input-container>
+		           
+		         
+            </md-content>
+		    
+			
+            <div >
+		        <md-button ui-sref='apply.skills' >NEXT TO YOUR SKILLS</md-button>
+		    </div>
+		
+				
+	</div>
+	<div flex='5'>
+		
+	</div>
+	<div flex-xs='100'  flex-gt-xs='50' 
+	   class='md-whiteframe-z2'  ><!-- FORM BOX DIV -->
+		<ui-gmap-google-map center="map.center" zoom="map.zoom">
+                  <ui-gmap-search-box template="map.searchbox.template" events="map.searchbox.events"></ui-gmap-search-box>  
+      
+
+    <!-- other ui-gmap-directives here -->
+
+		</ui-gmap-google-map>
+	</div>
+	
+</div>
+
+
+      
+      
+

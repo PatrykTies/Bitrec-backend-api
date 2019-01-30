@@ -1,0 +1,46 @@
+
+THIS GOUSE TO jobseekerService.js
+
+(firstname, lastname, age, email, nationality, phone, postalcode, resumeurl, empstatus, avail, worked, englishlvl)
+
+
+first_name: firstname,
+last_name: lastname,
+age: age,
+email_id: email,
+nationality: nationality,
+contact_no: phone,
+postal_code: postalcode,
+resume_url: resumeurl,
+employement_status: empstatus,
+when_to_start_work: avail,
+worked_before: worked,
+english_level: englishlvl,
+date_of_register: timestamp()
+
+
+
+//file system from api.js
+	 /** When using the "single"
+      data come in "req.file" regardless of the attribute "name". **/
+	  var tmp_path = req.file.path;
+
+	  /** The original name of the uploaded file
+	      stored in the variable "originalname". **/
+	  var target_path = './uploads/' + req.file.originalname;
+
+	  /** A better way to copy the uploaded file. **/
+	  var src = fs.createReadStream(tmp_path);
+	  var dest = fs.createWriteStream(target_path);
+	  src.pipe(dest);
+	  src.on('end', function() { console.log('completed!'); });
+	  src.on('error', function(err) { res.render('error'); });
+
+
+
+
+
+
+
+       
+      

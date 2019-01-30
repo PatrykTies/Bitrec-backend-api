@@ -1,0 +1,112 @@
+<style>
+    @media (min-width: 1200px) {
+      [dynamic-layout]{
+        width: 1200px;
+        margin-top: 20px;
+      }
+      .dynamic-layout-col-4{
+        width : 400px;
+      }
+      .dynamic-layout-col-8{
+        width : 600px;
+      }
+    }
+    @media (min-width: 900px) and (max-width: 1200px){
+      [dynamic-layout]{
+        width: 900px;
+      }
+      .dynamic-layout-col-4{
+        width : 300px;
+      }
+      .dynamic-layout-col-8{
+        width : 600px;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 900px){
+      [dynamic-layout]{
+        width: 600px;
+      }
+      .dynamic-layout-col-4{
+        width : 300px;
+      }
+      .dynamic-layout-col-8{
+        width : 600px;
+      }
+    }
+    @media (max-width: 600px){
+      [dynamic-layout]{
+        width: 300px;
+      }
+      .dynamic-layout-col-4{
+        width : 300px;
+      }
+      .dynamic-layout-col-8{
+        width : 300px;
+      }
+    }
+    .dynamic-layout-item {
+      padding: 10px;
+    }
+    .move-items-animation{
+      transition-property: left, top;
+      transition-duration: .5s;
+      transition-timing-function: ease-in-out;
+    }
+    .dynamic-layout-item-parent.ng-enter{
+      transition: .5s ease-in-out;
+      opacity:0;
+    }
+    .dynamic-layout-item-parent.ng-enter-stagger{
+      transition-delay:0.2s;
+      
+    }
+    .dynamic-layout-item-parent.ng-enter.ng-enter-active{
+      opacity:1;
+    }
+    .dynamic-layout-item-parent.ng-leave{
+      transition: .5s ease-in-out;
+      opacity:1;
+    }
+    .dynamic-layout-item-parent.ng-leave-stagger{
+     transition-delay:0.2s;
+     
+    }
+    .dynamic-layout-item-parent.ng-leave.ng-leave-active{
+      opacity:0;
+    }
+    [dynamic-layout]{
+      float: left;
+      position: relative;
+    }
+   
+
+
+    </style>
+  
+  
+<div class="container">
+       
+        <div class="row">
+          <div class="col m4">
+            <h5>Filtering</h5>
+            <div class="btn-group" role="group">
+                <button class="btn btn-default" ng-class="{active: isTabActive('home')}" ng-click="filter('home')">Show all</button>
+                <button class="btn btn-default" ng-class="{active: isTabActive('work')}" ng-click="filter('work')">Experience</button>
+                <button gsap class="btn btn-default" ng-class="{active: isTabActive('education')}" ng-click="filter('education')">Education</button>
+            </div>
+          </div>
+          <div class="col m4">
+            <h5>Sorting</h5>
+            <div class="btn-group" role="group">
+                <button class="btn btn-default"ng-class="{active: rankers === null}"   ng-click="rankers = null">Original order</button>
+                <button class="btn btn-default" ng-class="{active: isRankerActive('added')}"  ng-click="orderBy('added')">Time created</button>
+                <gsap></gsap>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+     
+ 	  </div>
+</div>
+  

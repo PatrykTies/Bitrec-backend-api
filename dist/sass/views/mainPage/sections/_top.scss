@@ -1,0 +1,905 @@
+/* PAGES (specific css for each view page)-------------------HOME
+============================================================================= */
+
+
+
+
+
+
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1524px) {
+  
+
+	.bg-first{
+	 background-image: url('../img/backgrounds/darkBlue.jpg');
+	 
+	} 
+    *{
+    	box-sizing: border-box;
+    }
+
+	.homepage_wrapper{
+	 	width: 80%;
+	 	margin: 0 auto;
+
+
+	}
+	.halfpage_wrap{
+
+		display: inline-block;	
+		width: 60%;
+		z-index: 9001;
+		float: left;
+		position: relative;	
+	} 
+	.homepage_text{
+		position: relative;
+		color: white;
+		
+		.headerAnimation{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: -200px;
+		}
+	}
+
+	.heading,.sub-heading,.home-action-buttons{
+		padding-left: 10%;
+	}
+	.mobileapp{
+		right: 7%;
+		bottom: 15%;
+		width: 40%;	
+		position: absolute;
+		z-index: 9000;
+	}
+
+
+  
+	/*===========================================ACTION BUTTONS =============*/
+	
+	.home-action-button{
+		display: inline-block;
+		padding-left: 40px;
+		text-align: center;
+		overflow: hidden;
+	}
+  	.button-hire{
+  		font-size: 24px;
+		display: inline-block;
+		padding: 10px;
+		width: 200px;
+		text-align: center;
+		color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 3px;
+		border-color: white;
+
+  		position: relative;
+  		z-index: 1;
+
+  		-webkit-transition: .30s;
+  		-moz-transition: .30s;
+  		-o-transition: .30s;
+  		-ms-transition: .30s;
+  		transition: .30s;
+
+  	
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0; /*CHANGE THIS TO RIGHT OR BOTTOM */
+			width:100%;
+			height: 30%;/*CHANGE THIS TO 0 OR 30%*/
+			background: rgba(255,255,255,0.5);
+			
+	  		-webkit-transition: .30s;
+	  		-moz-transition: .30s;
+	  		-o-transition: .30s;
+	  		-ms-transition: .30s;
+	  		transition: .30s;
+
+			z-index: -1;
+			opacity: 0;	
+		}
+		&:hover:after{
+			height: 100%;/*CHANGE THIS TO HEIGHT*/
+			opacity: 1;
+		}
+	
+  	}
+  	.button-work{
+  		font-size: 24px;
+		display: inline-block;
+		padding: 10px;
+		width: 200px;
+		text-align: center;
+		color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 3px;
+		border-color: white;
+
+  		position: relative;
+  		z-index: 1;
+		
+  		-webkit-transition: .30s;
+  		-moz-transition: .30s;
+  		-o-transition: .30s;
+  		-ms-transition: .30s;
+  		transition: .30s;
+
+  		&:before{
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			left: 0; /*CHANGE THIS TO RIGHT OR BOTTOM */
+			width:50%;
+			height: 100%;/*CHANGE THIS TO 0 OR 30%*/
+			background: rgba(255,255,255,0.5);
+			
+	  		-webkit-transition: .30s;
+	  		-moz-transition: .30s;
+	  		-o-transition: .30s;
+	  		-ms-transition: .30s;
+	  		transition: .30s;
+
+			z-index: -1;
+			opacity: 0;	
+  		}
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -100%;
+			right: 0; /*CHANGE THIS TO RIGHT OR BOTTOM */
+			width:50%;
+			height: 100%;/*CHANGE THIS TO 0 OR 30%*/
+			background: rgba(255,255,255,0.5);
+			
+	  		-webkit-transition: .30s;
+	  		-moz-transition: .30s;
+	  		-o-transition: .30s;
+	  		-ms-transition: .30s;
+	  		transition: .30s;
+
+			z-index: -1;
+			opacity: 0;	
+		}
+		&:hover:after,
+		&:hover:before{
+			bottom: 0;/*CHANGE THIS TO HEIGHT*/
+			opacity: 1;
+		}
+		
+	
+	
+  	}
+  	/*===========================================TESTIMONIAL LINE HR/VR =============*/
+  	.line1{
+		color: white;
+		width: 0;
+		height: 120%;
+		margin-top: -20px;
+		float: right;
+		display: inline-block;
+		position: absolute;
+  	}
+	.line2{
+		color: white;
+		width: 60%;
+		left:35px;
+		display: inline-block;
+		position: absolute;
+
+		&:after{
+			content: '';
+			background-repeat: no-repeat;
+
+			position: absolute;	
+			background-position: 0px 0px;
+			background-image: url('../img/homepage/stars_service.png');
+			z-index: 9999;
+			background-size: 300px 35px;
+			width: 300px;
+			height: 35px;
+			top: -35px;
+			left: 125px;
+
+		}
+		&:before{
+			content: "HR Manager";
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			top:-25px;
+			left: 10px;
+			z-index: 9999;
+		}
+
+	}
+	.testimonial-wrapper{
+		position: relative;
+		padding-top: 5%;
+		
+	
+	}
+
+	.testimonial-img-wrapper{
+		position: absolute;
+		opacity: 0;
+		display: inline-block;
+		margin-top: 100px;
+		width: 100%;
+		padding-left: 40px;
+
+		p{	
+			color: white;
+			display: inline-block;
+			width: 50%;
+		
+			padding:10px;
+		}
+		img{
+			padding-top: 10px;
+			padding-right: 10px;
+			margin-top: 10px;
+			 -moz-border-radius: 4px 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+			  margin-top: 10px;
+		}
+		&:nth-child(1){
+			opacity:1;
+		}
+
+  	}
+
+  	/*===========================================RIGHT DOT MENU===================*/
+
+	$circle-width: 20px;
+	$one-width-multiplier: 1.6;
+	$mid-opacity-color: rgba(255, 255, 255, 0.5);
+	$rect-width: 40px;
+	$rect-height: 4px;
+	$border-indicator-width: $circle-width * 1.6;
+	$animation-length: 2s;
+
+	.right_menu{
+		top:50%;
+		right: 3%;
+		float: right;
+		z-index: 9999;
+		position: relative;
+	}
+
+  	
+	.circle {
+	  display: block;
+	  width: $circle-width;
+	  height: $circle-width;
+	  border-radius: 50%;
+	  margin-top: $circle-width/2 + 4px;/*===========================TYM STERUJE ODLEGLOSC POMIEDZY DOTAMI*/
+	  margin-left: 13px;
+	}
+	.circle-mid-opacity {
+	  background-color: $mid-opacity-color;
+	}
+	.border-indicator {
+	  position: absolute;
+	  width: $border-indicator-width;
+	  height: $border-indicator-width;
+	  border-radius: 50%;
+	  border: 1px solid white;
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -$border-indicator-width/2 + 6px;
+	  margin-left: -$border-indicator-width/2 + 6px; /*BORDER KOLKO PRZESOWANIE*/
+	}
+
+
+	ol.ol-4 {
+	  list-style: none;
+	  padding: 12px 0 0 0 ;
+	  margin: 12px 0 0 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  width: 117px;
+	  overflow-x: hidden;
+	  margin-left: -$border-indicator-width/2 - 1px;
+	  margin-top: -$border-indicator-width/2 - 1px;
+	  animation: ol4shift $animation-length alternate ease-in-out; /*===ZABRALEM infinite*/
+	}
+
+	@mixin move-circles-4 ($step) {
+		/*=========================================TO W NAWIASIE STERUJE WIELKOSCIA SKOKU ANIMACJI*/
+	  margin-top: -$border-indicator-width/2 - 1px - ($step * 2.4 * $circle-width) - $step * 0.33; /*margin-top or left to change*/
+	}
+	/*=========================================ANIMACJA OPACITY>WHITE KAZDEGO DOTTU*/
+	.circle-pg-4-one {
+	  animation: pg-4-one $animation-length alternate ease-in-out; /*===ZABRALEM infinite*/
+	}
+
+	.circle-pg-4-two {
+	  animation: pg-4-two $animation-length alternate ease-in-out;
+	}
+
+	.circle-pg-4-three {
+	  animation: pg-4-three $animation-length alternate ease-in-out;
+	}
+
+
+	@keyframes ol4shift {
+	  from {
+	    @include move-circles-4(0);
+	  }
+	  20% {
+	    @include move-circles-4(0);
+	  }
+	  40% {
+	    @include move-circles-4(1);
+	  }
+	  60% {
+	    @include move-circles-4(1);
+	  }
+	  80% {
+	    @include move-circles-4(2);
+	  }
+	  to {
+	    @include move-circles-4(2);
+	  }
+	}
+
+	@keyframes pg-4-one {
+	  from {
+	    background-color: white;
+	  }
+	  20% {
+	    background-color: white;
+	  }
+	  40% {
+	    background-color: $mid-opacity-color;
+	  }
+	  to {
+	    background-color: $mid-opacity-color;
+	  }
+	}
+
+	@keyframes pg-4-two {
+	  from {
+	    background-color: $mid-opacity-color;
+	  }
+	  20% {
+	    background-color: $mid-opacity-color;
+	  }
+	  40% {
+	    background-color: white;
+	  }
+	  60% {
+	    background-color: white;
+	  }
+	  80% {
+	    background-color: $mid-opacity-color;
+	  }
+	  to {
+	    background-color: $mid-opacity-color;
+	  }
+	}
+
+	@keyframes pg-4-three {
+	  from {
+	    background-color: $mid-opacity-color;
+	  }
+	  60% {
+	    background-color: $mid-opacity-color;
+	  }
+	  80% {
+	    background-color: white;
+	  }
+	  to {
+	    background-color: white;
+	  }
+	}
+
+
+  	/*=================================================TESTIMONIAL&HEADER&IMGS ANIMATIONS===============*/
+
+  	@keyframes testimonialsAnimation{/*TOTAL ANIMATION TIME 14s*/
+		0%{opacity: 0; margin-left:-50px;}
+		5%,35%{opacity: 0.7; margin-left:0;}/*between 0.7s - 2.8s animation is visible */
+		38% , 100%{opacity: 0; margin-left: 50px;}/*between 2.8s-3.5s anim fadeout, than 3.5s- 14s opacity 0*/
+  	}
+  	@keyframes headerAnimation{/*TOTAL ANIMATION TIME 14s*/
+		0%{opacity: 0; margin-top:-500px;}
+		5%,35%{opacity: 1; margin-top:-200px;}/*between 0.7s - 2.8s animation is visible */
+		38% , 100%{opacity: 0; margin-top: 500px;}/*between 2.8s-3.5s anim fadeout, than 3.5s- 14s opacity 0*/
+  	}
+	.headerAnimation{
+		&:nth-child(1){
+			animation: headerAnimation 20s infinite;
+			animation-delay: 0;
+		}
+		&:nth-child(2){
+			opacity: 0;
+			animation: headerAnimation 20s infinite;
+			animation-delay: 6.6s;
+		}
+		&:nth-child(3){
+			opacity: 0;
+			animation: headerAnimation 20s infinite;
+			animation-delay: 13s;
+		}
+	}
+
+  	.testimonial-img-wrapper{
+  		&:nth-child(1){
+			animation: testimonialsAnimation 20s infinite;
+			animation-delay: 0;
+		}
+		&:nth-child(2){
+			animation: testimonialsAnimation 20s infinite;
+			animation-delay: 6.6s;
+		}
+		&:nth-child(3){
+			animation: testimonialsAnimation 20s infinite;
+			animation-delay: 13s;
+		}
+
+  	}
+	
+  	
+	
+  
+ 
+	
+	
+	/*
+	.button-one{
+		font-size: 24px;
+		display: block;
+		padding: 10px;
+		width: 200px;
+		text-align: center;
+		color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 3px;
+		border-color: white;
+	}*/
+
+    /*===============================================================*/
+
+	/*
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}*/
+
+
+
+
+
+
+
+
+
+	
+
+	/*
+	.hire_margin{
+		margin-right: 0;
+		padding-right: 0;
+		overflow:hidden;
+	}
+	.hire, .join{
+		display: block;
+		background: fade-out($yellow, 0.3);
+		overflow:hidden;
+		color: black;
+		text-decoration: none;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding: 0 20px;
+		margin: 0 0 200px 0 !important;
+		
+		&:hover{
+			background: black;
+			color: $yellow;
+		}
+		.ion-chevron-right{
+			font-size: .8em;
+			margin-left:10px;	
+		}
+	}
+
+	h5{
+		color: black;
+	}
+
+	.hometitle{
+	    font-family: 'Magra', sans-serif;
+		margin: 200px 0 50px 0;
+		color: $yellow;
+		text-transform: uppercase;
+
+		span{
+			display: inline-block;
+			background: fade-out($black, 0.5 );
+			font-size: 70px;
+			margin-bottom: 5px;
+			padding: .4em .6em .4em .6em;
+		}
+	}*/
+
+	/*
+	.flex-video{
+	    height: 0;
+	    overflow: hidden;
+	    padding-bottom: 50%;
+	    position: relative;
+	}
+
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed,
+	.flex-video video {
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    left: 0;
+	}*/
+
+}
+
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+/* Styles */
+	
+	.bg-first{
+	 background-image: url('../img/backgrounds/darkBlue.jpg');
+	 
+	} 
+    *{
+    	box-sizing: border-box;
+    }
+
+	.homepage_wrapper{
+	 	width: 80%;
+	 	margin: 0 auto;
+
+
+	}
+	.halfpage_wrap{
+		display: inline-block;
+		vertical-align: top;
+		width: 40%;
+		z-index: 9001;
+		float: left;
+		position: relative;
+
+  	  	
+   		
+	} 
+	.homepage_text{
+		color: white;
+		margin-top: 10%;
+	}
+	.mobileapp{
+		display: inline-block;
+		width: 40%;
+		margin-right: 30px;
+		float: right;
+		z-index: 9000;
+	}
+    /*===============================================================*/
+	.testimonial-wrapper{
+		
+		display: inline-block;
+		float: left;
+		
+	}
+	.testimonial-img-wrapper{
+
+		display: inline-block;
+		margin-top: 80px;
+	    position: relative;
+
+
+		.img-testimonial{
+			 -moz-border-radius: 4px / 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+
+		}
+		.logo-testimonial{
+			  width: 200px;
+		}
+	}
+
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+	
+	.home-action-buttons{
+		display: inline-block;
+	}
+	.home-action-button{
+		display: inline-block;
+		padding-left: 40px;
+		background-color: transparent;
+	}
+
+	.button-one{
+		font-size: 24px;
+		display: block;
+		padding: 10px;
+		width: 200px;
+		text-align: center;
+		color: white;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 3px;
+		border-color: white;
+
+
+	}
+	
+	/*.hire, .join{
+		display: inline-block;
+		background: fade-out($yellow, 0.3);
+		color: black;
+		text-decoration: none;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding: 0 .2em;
+		margin-bottom: 80px;
+		&:hover{
+			background: black;
+			color: $yellow;
+		}
+		.ion-chevron-right{
+			font-size: .8em;
+			margin-left:10px;	
+		}
+	}
+
+	h5{
+		color: black;
+	}
+
+	.hometitle{
+	    font-family: 'Magra', sans-serif;
+		margin: 80px 0 20px 0;
+		color: $yellow;
+		text-transform: uppercase;
+
+		span{
+			display: inline-block;
+			background: fade-out($black, 0.5 );
+			font-size: 60px;
+			margin-bottom: 5px;
+			padding: .4em .2em .4em .2em;
+		}
+	}
+	.testimonial-img-wrapper{
+		display: inline-block;
+		margin-top: 80px;
+	    position: relative;
+	  
+
+		.img-testimonial{
+			 -moz-border-radius: 4px / 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+
+		}
+		.logo-testimonial{
+			  width: 200px;
+		}
+	}
+
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}
+	.flex-video{
+	    height: 0;
+	    overflow: hidden;
+	    padding-bottom: 50%;
+	    position: relative;
+	}
+
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed,
+	.flex-video video {
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    left: 0;
+	}
+	
+    */
+
+}
+/*MEDIA FOR LAPTOP SCREENS  AND  MOBILE SAMSUNG & IPHONE 5C SCREENS*/
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	
+	/*.hire_margin{
+	    margin-bottom: 1em;
+	}
+	.join_margin{
+		margin-top: 1em;
+		margin-bottom: 50px;
+	}
+	.hire, .join{
+		
+		background: fade-out($yellow, 0.3);
+		color: black;
+		text-decoration: none;
+		font-size: 80px;
+		text-transform: uppercase;
+		padding: 0.2em 1em 0.2em 0.2em;
+		
+		&:hover{
+			background: black;
+			color: $yellow;
+		}
+		.ion-chevron-right{
+			font-size: .8em;
+			margin-left:10px;	
+		}
+	}
+
+	h5{
+		color: black;
+	}
+
+	.hometitle{
+	    font-family: 'Magra', sans-serif;
+		margin: 10px 0 100px 0;
+		color: $yellow;
+		text-transform: uppercase;
+
+		span{
+			display: inline-block;
+			background: fade-out($black, 0.5 );
+			font-size: 70px;
+			margin-bottom: 5px;
+			padding: .1em .2em .1em .2em;
+		}
+	}
+	.testimonial-img-wrapper{
+		display: inline-block;
+		margin-top: 80px;
+	    position: relative;
+
+	  
+
+		.img-testimonial{
+			 -moz-border-radius: 4px / 4px;
+			  -webkit-border-radius: 4px 4px;
+			  border-radius: 50%;
+			  box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+			  width: 100px;
+
+		}
+		.logo-testimonial{
+			  width: 200px;
+		}
+	}
+
+
+	.bubble{
+
+		display: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		margin-left: 10px;
+		padding: 10px 10px 10px 15px;
+		width: 300px;
+		border: 3px solid white;
+		color: white;
+		border-radius: 40px 40px 40px 10px;
+
+		&.launched{
+			display: inline-block;
+		}
+
+	}
+	.flex-video{
+	    height: 0;
+	    overflow: hidden;
+	    padding-bottom: 50%;
+	    position: relative;
+	}
+
+	.flex-video iframe,
+	.flex-video object,
+	.flex-video embed,
+	.flex-video video {
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    left: 0;
+	}*/
+}
+/*MEDIA FOR TABLETS SCREENS*/
+@media only screen and (min-width : 322px) and (max-width : 767px){
+/* Styles */
+ 
+
+    
+}
+/*MEDIA FOR SMALLER SCREENS*/
+@media only screen and (max-width : 321px) {
+/* Styles */
+ 
+
+    
+}
+

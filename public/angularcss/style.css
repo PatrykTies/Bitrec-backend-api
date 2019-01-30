@@ -1,0 +1,98 @@
+.master-root {
+  background: brown;
+}
+
+.form-view {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  /*THIS MAKES ANIMATION POSSIBLE*/
+}
+
+.lang-selector {
+  /*THIS IS MAKING ANIMATION ON LOAD*/
+}
+
+.form-view.ng-enter {
+  /*INITIAL ANIMATION ON NG-ENTER*/
+  -webkit-animation: formSlideIn 1s;
+          animation: formSlideIn 1s;
+}
+
+.form-view.ng-leave {
+  /*INITIAL ANIMATION ON NG-ENTER*/
+  position: absolute;
+  -webkit-animation: formSlideOut 1s;
+          animation: formSlideOut 1s;
+}
+
+@-webkit-keyframes formSlideIn {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes formSlideIn {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes formSlideOut {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+}
+@keyframes formSlideOut {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+}
+.form-two {
+  background: blue;
+}
+
+.progress-view {
+  background: yellow;
+  height: 100px;
+  -webkit-animation: formSlideIn 3s;
+          animation: formSlideIn 3s;
+}
+
+@keyframes formSlideIn {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}

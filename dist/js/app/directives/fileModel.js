@@ -1,0 +1,1 @@
+define(["app/app"],function(i){"use strict";i.directive("fileModel",["$parse",function(i){var n=function(n,e,t){var c=i(t.fileModel),f=c.assign;e.bind("change",function(){n.$apply(function(){f(n,e[0].files[0])})})};return{restrict:"A",link:n}}])});

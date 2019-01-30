@@ -1,0 +1,6 @@
+[
+	{"workType":"Loader", "qty":345},
+    {"workType":"Forklift", "qty":66},
+    {"workType":"Warehouse", "qty":232},
+    {"workType":"Cleaner", "qty":155}
+]

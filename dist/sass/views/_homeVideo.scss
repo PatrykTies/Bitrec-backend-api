@@ -1,0 +1,157 @@
+/*----------------------------------------------------------------------------------------------------
+--------------------------------------HERO SECTION WITH VIDEO-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#videobcg { 
+     position: absolute;
+     top: -180px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     z-index: -2;
+     overflow: hidden;
+     -webkit-filter: sepia(100%) blur(5px);
+}
+
+.videooverlay{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url('../img/smalllines.png');
+    background-repeat: repeat;
+    z-index: -1;
+    
+}
+
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1824px) {
+     #videobcg { 
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     min-height: 100%;
+     min-width: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+    }
+}
+
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1824px){// and (device-aspect-ratio : 4/3) {
+/* Styles */
+    #hero{padding:0px;margin:0px;}
+    #videobcg{
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         min-height: 150%;
+         min-width: 100%;
+        
+         width: auto;
+         height: auto;
+         z-index: -1000;
+         overflow: hidden;
+        }
+    h1{
+        span{
+        
+            font-size: 50px;
+        }
+        
+    }
+
+}
+/*MEDIA FOR LAPTOP SCREENS*/
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+/* Styles */
+    #hero{padding:0px;margin:0px;}
+    #videobcg{
+        position: absolute;
+         top:10px;
+         left:-200px;
+          min-height: 100%;
+     min-width: 100%;
+     width: auto;
+     height: auto;
+         z-index: -1000;
+         overflow: hidden;
+        }
+      h1{
+        span{
+        
+            font-size: 40px;
+        }
+        
+    }
+}
+/*MEDIA FOR TABLETS SCREENS*/
+@media only screen and (min-width : 322px) and (max-width : 767px){
+/* Styles */
+    #hero{padding:0px;margin:0px;}
+    #videobcg{
+        position: absolute;
+         top: 0px;
+         left: -300px;
+          min-height: 100%;
+     min-width: 100%;
+     width: auto;
+     height: auto;
+         z-index: -1000;
+         overflow: hidden;
+        }
+    h1>span{
+        
+            font-size: 40px;
+        
+    }
+    
+}
+/*MEDIA FOR SMALLER SCREENS*/
+@media only screen and (max-width : 321px) {
+/* Styles */
+    #videobcg{
+        position: absolute;
+         top: 0px;
+         left: -600px;
+         min-height: 100%;
+         min-width: 100%;
+         width: auto;
+         height: auto;
+         z-index: -1000;
+         overflow: hidden;
+        }
+    
+}

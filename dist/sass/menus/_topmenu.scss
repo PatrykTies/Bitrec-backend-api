@@ -1,0 +1,91 @@
+
+
+
+/*MEDIA FOR BIGGEST DESKTOP SCREENS*/
+@media only screen and (min-width : 1524px) {
+
+.top_nav_wrapper{
+	background-color: transparent;
+	z-index: 9999;
+	position: fixed;
+	float: right;
+	width: 100%;
+	right: 10%;
+	
+}
+.second_wrapper{
+	background-color: red;
+	
+}
+.second_wrapper ul{
+	background-color: green;
+	
+	
+	
+}
+.second_wrapper li{
+	
+	
+	margin-left: 5px;
+    
+	width: 100px;
+	text-align: center;
+	float: right;
+	display: inline-block;
+	background-color: transparent;
+
+}
+.second_wrapper a{
+	color: white;
+	display: block;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+
+}
+.second_wrapper li:last-child{
+	background-color: orange;
+	width: 150px;
+	border-width: 0px;
+}
+
+
+  /*.no-shadow{
+	background-color: transparent;
+	box-shadow: none !important;
+	position: fixed;
+	z-index: 9999;
+    }*/
+}
+
+/*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
+@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+/* Styles */
+	.no-shadow{
+	background-color: transparent;
+	box-shadow: none !important;
+}
+    
+
+}
+/*MEDIA FOR LAPTOP SCREENS  AND  MOBILE SAMSUNG & IPHONE 5C SCREENS*/
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	.no-shadow{
+		background-color: orange;
+		box-shadow: 2px 0 5px black;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

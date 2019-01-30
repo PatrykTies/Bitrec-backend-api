@@ -1,0 +1,46 @@
+
+(function(){
+	'use strict';
+
+	var express = require('express');
+	var http = require('http');
+	var bodyParser = require('body-parser');
+        var cors = require('cors');
+	var morgan = require('morgan');
+	var dbConnection = require('./dbConnection.js');
+	var path = require('path');
+
+	module.exports.create = function (server, host, port, publicDir, uploadsDir) {
+
+		var app = express();
+                app.options('*', cors());
+   		app.use(cors());
+		var api = require('./api.js')(app, express);
+
+		dbConnection.dbConnection.getMysqlConnection();
+
+		
+		app.use(express.static(publicDir));
+                app.use(express.static(uploadsDir));
+
+		app.use(bodyParser.urlencoded({extended: true}));
+		app.use(bodyParser.json());
+
+		app.use(morgan('dev'));
+
+		app.use('/api',api);
+						
+				
+		app.listen(app.get(port), function(err){
+		    if(err){
+		        console.log('APP.JS' + err);
+		    }else {
+		        console.log('Express server listening on port ' + app.get(port));
+		    }
+
+		});
+
+		return app;
+	};
+
+}());

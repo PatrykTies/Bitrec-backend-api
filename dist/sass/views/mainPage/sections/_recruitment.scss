@@ -1,0 +1,145 @@
+$popUpSpeedNormal: 1s;
+$popUpSpeedFaster: 0.5s;
+
+.fp-viewing-recruitment #popupIcons g:nth-of-type(2){	/*#jobs*/
+		opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:130px 320px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 1s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 1s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 1s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 1s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(1){	/*#job*/
+		opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:180px 220px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 1.3s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 1.3s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 1.3s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 1.3s ease-out forwards;	
+		
+}
+
+.fp-viewing-recruitment #popupIcons g:nth-of-type(3){	/*#comp*/
+		opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:260px 210px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 1.7s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 1.7s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 1.7s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 1.7s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(4){	/*#lupa2*/
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:340px 220px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 2s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 2s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 2s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 2s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(6){	
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:400px 310px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 2.3s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 2.3s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 2.3s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 2.3s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(5){	
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:580px 560px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 2.6s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 2.6s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 2.6s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 2.6s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(10){	/*7*/
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:780px 320px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 3s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 3s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 3s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 3s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(9){	
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:880px 420px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 3.3s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 3.3s ease-out forwards;
+		-o-animation:bounceIn $popUpSpeedFaster 3.3s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 3.3s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(8){	
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:980px 520px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 3.6s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 3.6s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 3.6s  ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 3.6s  ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #popupIcons g:nth-of-type(7){	
+	opacity: 0;
+		transform-origin: 50% 50%;
+		-moz-transform-origin:980px 720px;
+		-webkit-animation:bounceIn $popUpSpeedFaster 3.9s ease-out forwards;
+		-moz-animation:bounceIn $popUpSpeedFaster 3.9s ease-out backwards;
+		-o-animation:bounceIn $popUpSpeedFaster 3.9s ease-out forwards;
+		animation: bounceIn $popUpSpeedFaster 3.9s ease-out forwards;	
+		
+}
+.fp-viewing-recruitment #slideIcons{
+	transform: translateX(2000px);
+	animation: slideIn $popUpSpeedNormal 4.2s ease-in forwards;
+	-moz-animation: slideIn $popUpSpeedNormal 4.2s ease-in forwards;
+}
+
+@keyframes slideIn{
+	
+	100%{transform: translateX(0);}
+}
+@-moz-keyframes slideIn{
+	
+	100%{transform: translateX(0);}
+}
+
+@keyframes bounceIn{
+	0%{transform: scale(0.1);}
+	50%{transform: scale(1.15);}
+	100%{transform: scale(1);opacity: 1;}
+}
+@-webkit-keyframes bounceIn {
+    0%{transform: scale(0.5);}
+	50%{transform: scale(1.15);}
+	100%{transform: scale(1);opacity: 1;}
+}
+@-moz-keyframes bounceIn {
+    0%{transform: scale(.7);}
+    50%{transform: scale(1.15);}
+	100%{transform: scale(1);opacity: 1;}
+}
+@-o-keyframes bounceIn {
+    0%{transform: scale(0.5);}
+	50%{transform: scale(1.15);}
+	100%{transform: scale(1);opacity: 1;}
+}
+
+#recruitment1{
+	margin-top: -50px;
+	
+	
+}
